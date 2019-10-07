@@ -24,7 +24,7 @@ nav{
 }
 
 #bar input:focus {
-    text-align: left;
+    text-align: center;
     background-color:rgba(223, 223, 223, 0.87);
 }
 
@@ -36,6 +36,10 @@ nav{
 #searchlogo{
     position:relative; 
     left:30%;
+    background-image: url("mag.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #compass {
@@ -166,7 +170,7 @@ img .footerpics{
 div.sidebar{
     position:fixed;
     float: right;
-    margin-top: 120px;
+    margin-top: 90px;
     margin-left: 60%;
 }
 
@@ -249,7 +253,7 @@ div.sidebar{
 
 /*suggestions*/
 .suggestions {
-    height:155px;
+    height:175px;
     width: 350px;
     margin-top: 20px;
     border-style: solid;
@@ -258,7 +262,7 @@ div.sidebar{
 }
 
 .suggestions .suggestionscontent{
-    height:150px;
+    height:170px;
     width: 345px;
     margin-top: 30px;
 }
@@ -303,7 +307,7 @@ div.sidebar{
     font-size: 11px;
 }
 
-.suggestion {
+.leftsuggest .suggestion {
     margin-top: 20px;
 }
 
@@ -321,7 +325,34 @@ div.sidebar{
     .post {
         margin-top:60px;
     }
-    .searchlogo{
-         
+    #searchlogo{
+        display: none;   
     }
+}
+
+.suggestionscontent {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 20px;
+}
+
+.follow {
+    margin-top: 20px;
+}
+.follow#follow2{
+    margin-top: 20px;
+}
+
+.footerlinks {
+    margin-top: 3px;
+}
+
+.footerlinks a{
+    color: grey;
+}
+
+.footerlink {
+    font-size: 11px;
+    
 }
